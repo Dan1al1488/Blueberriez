@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blueberries🫐</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images (2).png">
+    <link rel="icon" type="image/png" href="images (2).jpeg">
+</head>
+<body>
+    <header>
+        <h1>Blueberries-Where every click brings you closer to perfection.🫐</h1>
+        
+        
+        
+        <a href="лич кабинет.html" class="profile-btn">Личный кабинет</a>
+
+    </header>
+    <div id="progress-bar"></div>
+
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Search products...">
+    </div>
+
+    <div class="filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="keyboards">Keyboards</button>
+        <button class="filter-btn" data-category="mice">Mice</button>
+        <button class="filter-btn" data-category="monitors">Monitors</button>
+        <button class="filter-btn" data-category="speakers">Speakers</button>
+        <button class="filter-btn" data-category="headsets">Headsets</button>
+        <button class="filter-btn" data-category="microphones">Microphones</button>
+        <button class="filter-btn" data-category="webcams">Webcameras</button>
+        <button class="filter-btn" data-category="accessories">Accessories</button>
+        <button class="filter-btn" data-category="other">Other</button>
+    </div>
+
+    <div class="products">
+        <!-- Товары будут отрисовываться через JavaScript -->
+    </div>
+    <div id="live-reviews">
+        <p>Последние отзывы:</p>
+        <div id="reviews-container"></div>
+    </div>
+
+    <div class="rating-section">
+        <h3>Оцените наш магазин</h3>
+        <div class="stars">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        </div>
+        <p id="rating-text"></p>
+    
+        <div class="comment-section">
+            <input type="text" id="username" placeholder="Ваше имя" required>
+            <textarea id="comment" placeholder="Оставьте отзыв..." required></textarea>
+            <button id="submit-review">Оставить отзыв</button>
+        </div>
+    
+        <h3>Отзывы</h3>
+        <div id="reviews-list"></div>
+    </div>
+    
+
+    
+    <div class="cart">
+        <span class="cart-counter">0</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        <div class="cart-dropdown">
+            <ul class="cart-list">
+                <!-- Cart items will be rendered here by JavaScript -->
+            </ul>
+            <div class="cart-total">Итого: $0</div>
+            <!-- Clear cart button will be added by JavaScript -->
+        </div>
+        
+
+    <!-- Модальное окно для логина -->
+<div id="login-modal" class="modal">
+    <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <h2>Войти в аккаунт</h2>
+        <div class="form-group">
+            <span class="form-icon">✉️</span>
+            <input type="email" id="email" placeholder="Введите ваш email" autocomplete="email">
+        </div>
+        <button id="send-code" class="btn-primary">Отправить код</button>
+        
+        <div class="form-group" style="display: none;" id="code-group">
+            <span class="form-icon">🔑</span>
+            <input type="text" id="code" placeholder="Введите код подтверждения" maxlength="6">
+        </div>
+        <button id="verify" class="btn-primary" style="display: none;">Подтвердить</button>
+    </div>
+</div>
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
